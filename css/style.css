@@ -514,23 +514,13 @@ html, body{
    font-weight: 100;
  }
 
-.left-nav .items ul li active {
-   color:#ECA400;
-   text-decoration: none;
-   font-weight: 100;
- }
-
 .left-nav .items ul li a i {
    width:16px;
    text-align: center;
    margin-right:8px;
  } 
 
-   .active {
-    color:#ECA400
-    text-decoration: none;
-    font-weight: 100;
-} 
+  
     
     
     
@@ -569,7 +559,11 @@ html, body{
    margin-top:8px;
  }
 
-    
+  .left-nav .active {
+    color:#ECA400
+    text-decoration: none;
+    font-weight: 100;
+}    
     
     
   /* CONTENT */
