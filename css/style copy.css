@@ -479,7 +479,7 @@ html, body{
    width:280px;
      position: absolute;
        
-     /* Added back in to fix*/
+     /* Added back to fix*/
      color:#FFFFFF;
      background: #34495E;
      
@@ -487,13 +487,10 @@ html, body{
    -moz-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;
    transition: all 0.3s ease-in-out;
-   
-      /* Scroll UP 800*/
-     transform: translate(0,-800px);
-     -webkit-transform: translate(0,-800px); /** Chrome & Safari **/
-     -o-transform: translate(0,-800px); /** Opera **/
-     -moz-transform: translate(0,-800px); /** Firefox -280px,0**/
-     
+   transform: translate(-280px,0);
+     -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
+     -o-transform: translate(-280px,0); /** Opera **/
+     -moz-transform: translate(-280px,0); /** Firefox **/
  }
  .left-nav.open {
    display:block;
@@ -502,8 +499,7 @@ html, body{
    -moz-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;
    transition: all 0.3s ease-in-out;
-  
-     transform: translate(0,0);
+   transform: translate(0,0);
      -webkit-transform: translate(0,0); /** Chrome & Safari **/
      -o-transform: translate(0,0); /** Opera **/
      -moz-transform: translate(0,0); /** Firefox **/
@@ -532,14 +528,11 @@ html, body{
      float:left;
      position: fixed;
      display:block;
-       
      transform: translate(0,0);
      -webkit-transform: translate(0,0); /** Chrome & Safari **/
      -o-transform: translate(0,0); /** Opera **/
      -moz-transform: translate(0,0); /** Firefox **/
    }
-    
-    
    .left-nav.open {
      width:14.66666667%;
      transform: translate(0,0);
@@ -547,7 +540,6 @@ html, body{
      -o-transform: translate(0,0); /** Opera **/
      -moz-transform: translate(0,0); /** Firefox **/
    }
-    
    .hamburger {
      display:none;
    }
