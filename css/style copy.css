@@ -479,7 +479,7 @@ html, body{
    width:280px;
      position: absolute;
        
-     /* Added back to fix*/
+     /* Added back in to fix*/
      color:#FFFFFF;
      background: #34495E;
      
@@ -487,11 +487,15 @@ html, body{
    -moz-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;
    transition: all 0.3s ease-in-out;
-   transform: translate(-280px,0);
-     -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
-     -o-transform: translate(-280px,0); /** Opera **/
-     -moz-transform: translate(-280px,0); /** Firefox **/
+   
+      /* Scroll UP 800 -old -280px,0*/
+     transform: translate(0,-800px);
+     -webkit-transform: translate(0,-800px); /** Chrome & Safari **/
+     -o-transform: translate(0,-800px); /** Opera **/
+     -moz-transform: translate(0,-800px); /** Firefox **/
+     
  }
+
  .left-nav.open {
    display:block;
    width:280px;
@@ -499,7 +503,8 @@ html, body{
    -moz-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;
    transition: all 0.3s ease-in-out;
-   transform: translate(0,0);
+  
+     transform: translate(0,0);
      -webkit-transform: translate(0,0); /** Chrome & Safari **/
      -o-transform: translate(0,0); /** Opera **/
      -moz-transform: translate(0,0); /** Firefox **/
@@ -528,11 +533,14 @@ html, body{
      float:left;
      position: fixed;
      display:block;
+       
      transform: translate(0,0);
      -webkit-transform: translate(0,0); /** Chrome & Safari **/
      -o-transform: translate(0,0); /** Opera **/
      -moz-transform: translate(0,0); /** Firefox **/
    }
+    
+    
    .left-nav.open {
      width:14.66666667%;
      transform: translate(0,0);
@@ -540,6 +548,7 @@ html, body{
      -o-transform: translate(0,0); /** Opera **/
      -moz-transform: translate(0,0); /** Firefox **/
    }
+    
    .hamburger {
      display:none;
    }
@@ -574,6 +583,13 @@ html, body{
  }
  .left-nav .items ul li a {
    color:#FFFFFF;
+   text-decoration: none;
+   font-weight: 100;
+ }
+
+/* added highlight */
+.left-nav .items ul li a:active {
+   color:#ECA400;
    text-decoration: none;
    font-weight: 100;
  }
