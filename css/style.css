@@ -581,7 +581,7 @@ html, body{
    position:absolute;
    background:#22303E;
    width:100%;
-   bottom:top;
+   bottom:0;
    left:0;
    right:0;
    padding:10px 0;
